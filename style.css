@@ -1,0 +1,39 @@
+/* /quiz/style.css */
+
+/* General button styles for elements outside the main quiz/leaderboard containers
+   These can be overridden by more specific inline styles or class-based styling */
+button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50; /* A standard green for general buttons */
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* This is a basic style for a result display if not handled by dynamic HTML content */
+.result {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Note: Most critical layout, header, footer, and modal specific styles
+   are now within the <style> tags of index.html and leaderboard.html
+   to allow for direct manipulation and consistency with the ceemediconepal.xyz look.
+   This file can be used for shared, more generic component styles if needed. */
